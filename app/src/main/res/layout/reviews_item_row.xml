@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:background="#333333"
+    android:padding="7dp">
+
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textAlignment="viewStart"
+        android:textColor="@color/red"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="This is my cool text it is really cool" />
+
+    <TextView
+        android:id="@+id/searchType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="10dp"
+        android:maxLines="4"
+        android:textAlignment="viewStart"
+        android:textColor="#fff"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        app:layout_constraintLeft_toLeftOf="@id/author"
+        app:layout_constraintTop_toBottomOf="@id/author"
+        tools:text="This is my cool text it is really cool" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

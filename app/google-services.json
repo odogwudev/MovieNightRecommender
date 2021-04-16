@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "33384016651",
+    "project_id": "movienightrecommender",
+    "storage_bucket": "movienightrecommender.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:33384016651:android:fe02676aed5366a36a900e",
+        "android_client_info": {
+          "package_name": "com.odogwudev.movienightrecommender"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "33384016651-jarj2vrifhbdfc3ds456p5mmugmk6u42.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfeLh26arKQhw51JM7RiyZBAT__vn-1L4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "33384016651-jarj2vrifhbdfc3ds456p5mmugmk6u42.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/image_130"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/padding_10"
+    app:cardCornerRadius="@dimen/padding_10"
+    app:cardElevation="@dimen/radius_3">
+
+    <ImageView
+        android:id="@+id/movie_img"
+        android:layout_width="@dimen/image_110"
+        android:layout_height="@dimen/image_150"
+        android:layout_marginTop="@dimen/padding_15"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/default_img" />
+
+    <TextView
+        android:id="@+id/movie_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/padding_5"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/movie_img"
+        app:layout_constraintStart_toStartOf="@+id/movie_img"
+        app:layout_constraintTop_toBottomOf="@+id/movie_img"
+        tools:text="Suicide squad" />
+
+    <TextView
+        android:id="@+id/movie_genre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toLeftOf="@+id/movie_img"
+        app:layout_constraintRight_toRightOf="@+id/movie_img"
+        app:layout_constraintTop_toBottomOf="@+id/movie_title"
+        tools:text="Action" />
+
+    <ProgressBar
+        android:id="@+id/rating_progressbar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="@dimen/image_40"
+        android:layout_height="@dimen/image_40"
+        android:layout_marginEnd="@dimen/padding_5"
+        android:indeterminate="false"
+        android:max="100"
+        android:progressDrawable="@drawable/custom_progress_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:progress="70" />
+
+    <TextView
+        android:id="@+id/rating_movie_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/rating_progressbar"
+        app:layout_constraintEnd_toEndOf="@+id/rating_progressbar"
+        app:layout_constraintStart_toStartOf="@id/rating_progressbar"
+        app:layout_constraintTop_toTopOf="@+id/rating_progressbar"
+        tools:text="@string/dummy_rating" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
